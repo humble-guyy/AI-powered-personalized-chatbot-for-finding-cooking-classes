@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Cooking Class Finder</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Include the Marked library for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Home Cooking Class Finder</h1>
+    </header>
+    <div class="chat-log" id="chat-log">
+      <div class="chat-message assistant-message">
+        Hello! I'm your Home Cooking Class Finder, ready to whisk you away to a culinary adventure!  
+        **Tell me, what kind of cooking class are you hungry for?**  
+        And where are you located?
+      </div>
+    </div>
+    <div class="input-area">
+      <div class="spinner-container" id="spinner-container" style="display: none;">
+        <div class="spinner"></div>
+        <span class="thinking-text">Thinking...</span>
+      </div>
+      <div class="input-controls">
+        <input type="text" id="user-input" placeholder="Type your question here..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
